@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int pizza,puff,cooldrink,total;
+    printf("Bill Details\n");
+    scanf("%d",&pizza);
+    printf("No of pizzas:%d\n",pizza);
+    scanf("%d",&puff);
+    printf("No of puffs:%d\n",puff);
+    scanf("%d",&cooldrink);
+    printf("No of cooldrinks:%d\n",cooldrink);
+    total= (pizza*100) + (puff*20) + (cooldrink*10) ;
+    printf("Total price=%d\n",total);
+    printf("ENJOY THE SHOW!!!");
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
