@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int ptank , dis;
+    scanf("%d\n",&ptank);
+    scanf("%d\n",&dis);
+    if((ptank>1) && (dis>1))
+    {
+       float a = ((float) ptank / dis)*100;
+        float m = dis * 0.6214;
+        float g= ptank * 0.2642;
+        float b = m / g;
+        printf("Liters/100KM\n");
+        printf("%.2f\n",a);
+        printf("Miles/gallons\n");
+        printf("%.2f\n",b);
+    }
+    else
+    {
+        printf("Invalid Input");
+    }
+    return 0;
+}
