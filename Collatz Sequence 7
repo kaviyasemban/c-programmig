@@ -1,0 +1,35 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("Enter a number\n");
+    printf("%d\n",a);
+  int count=0;
+    while(a>1)
+    {
+        count++;
+        if(a%2==0)
+        {
+            a=a/2;
+        }
+        else
+        {
+            a=(3*a)+1;    
+        }
+        printf("%d\n",a);
+        
+        
+    }
+    
+    printf("count:%d",count);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
