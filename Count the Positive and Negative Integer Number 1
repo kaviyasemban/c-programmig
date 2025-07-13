@@ -1,0 +1,36 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a,i,b;
+    scanf("%d",&a);
+    float positivecount=0;
+              float negativecount=0;
+ for(i=0;i<a;i++)
+ {
+     
+     scanf("%d",&b);
+     if(b>0)
+     {
+         positivecount++;
+         
+     }
+     else 
+     {
+         negativecount++;
+         
+     }
+
+ }       
+        
+              printf("Count of Positive Integer is %.2f\n",positivecount);
+              printf("Count of Negative Integer is %.2f\n",negativecount);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
