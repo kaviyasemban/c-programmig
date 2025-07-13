@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a,i;
+    scanf("%d\n",&a);
+            
+                if((a>=1)&&(a<=9))
+                {
+                     for(i=1;i<=a;i++){
+                         printf("%d x %d = %d\n",a,i,a*i);
+                    
+                     }
+                }
+                else
+                {
+                    printf("Invalid Input");
+                }
+                
+             
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
