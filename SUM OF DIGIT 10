@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n,sum=0;
+    scanf("%d",&n);
+    if(n>99)
+    {
+       while(n>0)
+       {
+           int rem=n%10;
+           sum=sum+rem;
+            n=n/10;
+       }
+      printf("Sum of digit is %d",sum);  
+    }
+    else
+    {
+        printf("Invalid Input");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
