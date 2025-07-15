@@ -1,0 +1,40 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int num;
+    int min ,max;
+    scanf("%d",&num);
+    int age[num];
+    for(int i=0 ; i<num ; i++)
+    {
+        scanf("%d ",&age[i]);
+    }
+         max=age[0];
+         min=age[0];
+        int i;
+        for( i=0 ; i<num ; i++)
+        {
+            if(max<age[i])
+            {
+                max=age[i];
+            }
+            else if(min>age[i])
+            {
+                min=age[i];
+            }
+        }
+       
+        
+        
+    
+     printf("Youngest=%d\n",min);
+    printf("Oldest=%d",max);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
