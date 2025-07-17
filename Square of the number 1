@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int num,square;
+    scanf("%d",&num);
+    if((num>1) && (num<=9))
+    {
+        square=num*num;
+    printf("Square of %d is %d",num,square);
+    }
+    else
+    {
+        printf("Invalid Input");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
