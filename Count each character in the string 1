@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    char str[100];
+    int count[256]={0};
+    scanf("%s",str);
+    for(int i=0;str[i]!='\0';i++)
+    {
+        count[(unsigned char)str[i]]++;
+    }
+    for(int i=0;str[i]!='\0';i++)
+    {
+        if(count[(unsigned char)str[i]]!=0)
+        {
+            printf("%c   %d\n",str[i],count[(unsigned char)str[i]]);
+            count[(unsigned char)str[i]]=0;
+        }
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
