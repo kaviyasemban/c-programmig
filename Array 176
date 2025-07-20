@@ -1,0 +1,35 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a,i,found=0;
+    scanf("%d",&a);
+    int door[a];
+    for(i=0;i<a;i++)
+    {
+        scanf("%d",&door[i]);
+    } 
+    int frddrs;
+    scanf("%d",&frddrs);
+    for(i=0;i<a;i++)
+    {
+        if(door[i]==frddrs)
+        {
+            printf("Door Number is %03d-DN\n",i);
+            found=1;
+            break;
+        }
+    }
+    if(!found)
+    {
+        printf("-1\n");
+        
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
