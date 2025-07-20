@@ -1,0 +1,26 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int alphacount=0;
+    char arr[20];
+        scanf("%s\n",arr);
+    for(int i=0;i<arr[i];i++)
+    {
+      
+    if(arr[i]=='a'||arr[i]=='A'||arr[i]=='e'||arr[i]=='E'||arr[i]=='i'||arr[i]=='I'||arr[i]=='o'||arr[i]=='O'||arr[i]=='u'||arr[i]=='U')
+    {
+     alphacount++;
+      
+    }
+    }
+       printf("count: %d",alphacount);
+     
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
