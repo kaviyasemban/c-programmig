@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    double salary;
+    double x,y,csalary;
+    scanf("%lf",&salary);
+    if(salary<15000)
+    {
+        x=0.15*salary;
+        y=0.90*salary;
+    }
+    else
+    {
+        x=5000;
+        y=0.98*salary;
+    }
+    csalary=salary+x+y;
+    printf("%.2f",csalary);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
